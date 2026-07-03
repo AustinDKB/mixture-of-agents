@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+# pi runtime / training artifacts — never publish
+.pi/intercept_log.jsonl
+**/intercept_log.jsonl
+.ruff_cache/

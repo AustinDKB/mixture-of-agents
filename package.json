@@ -1,0 +1,49 @@
+{
+  "name": "mixture-of-agents",
+  "version": "1.0.0",
+  "description": "pi global extension that routes each turn's LLM call to a random model from a configurable pool (mixture-of-agents), with a /moa toggle and footer status.",
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "llm",
+    "mixture-of-agents",
+    "moa",
+    "model-routing"
+  ],
+  "license": "MIT",
+  "author": "Austin Bakanec",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinDKB/mixture-of-agents.git"
+  },
+  "homepage": "https://github.com/AustinDKB/mixture-of-agents#readme",
+  "bugs": {
+    "url": "https://github.com/AustinDKB/mixture-of-agents/issues"
+  },
+  "pi": {
+    "extensions": [
+      "./mixture-of-agents.ts"
+    ]
+  },
+  "files": [
+    "*.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
